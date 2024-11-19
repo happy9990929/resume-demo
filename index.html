@@ -10,21 +10,15 @@
     <!-- CSS 框架 -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
-    <!-- 圖標 -->
-    <link rel="stylesheet" href="./css/open-iconic-bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/ionicons.min.css" />
-    <link rel="stylesheet" href="./css/flaticon.css" />
-    <link rel="stylesheet" href="./css/icomoon.css" />
-
-    <!-- 動畫 -->
-    <link rel="stylesheet" href="./css/animate.css" />
-
     <!--輪播圖-->
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
 
+    <!-- 動畫 -->
+    <link rel="stylesheet" href="./css/animate.css" />
+
     <!-- 燈箱 -->
-    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
 
     <!-- 自訂義 -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -46,7 +40,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="oi oi-menu"></span> Menu
+          <span>
+            <img src="./images/icon/menu.svg" />
+          </span> Menu
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
@@ -139,7 +135,9 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="media block-6 services d-block ftco-animate">
-                  <div class="icon"><span class="flaticon-analysis"></span></div>
+                  <div class="icon">
+                    <img src="./images/icon/web.svg" />
+                  </div>
                   <div class="media-body">
                     <h3 class="heading mb-3">網頁設計</h3>
                     <p>結合美觀的視覺設計與良好的用戶體驗，打造出功能完善且具有吸引力的網站。</p>
@@ -148,7 +146,9 @@
               </div>
               <div class="col-md-6">
                 <div class="media block-6 services d-block ftco-animate">
-                  <div class="icon"><span class="flaticon-analysis"></span></div>
+                  <div class="icon">
+                    <img src="./images/icon/app.svg" />
+                  </div>
                   <div class="media-body">
                     <h3 class="heading mb-3">APP 介面設計</h3>
                     <p>
@@ -280,16 +280,16 @@
         <div class="filters ftco-animate">
           <ul>
             <li class="active" data-filter="*">全部</li>
-            <li data-filter=".packaging">網頁設計</li>
-            <li data-filter=".mockup">APP設計</li>
-            <li data-filter=".typography">平面設計</li>
-            <li data-filter=".photography">包裝設計</li>
+            <li data-filter=".web">網頁設計</li>
+            <li data-filter=".app">APP設計</li>
+            <li data-filter=".graphic">平面設計</li>
+            <li data-filter=".packaging">包裝設計</li>
           </ul>
         </div>
 
         <div class="filters-content ftco-animate mb-5">
           <div class="row grid">
-            <div class="single-portfolio col-sm-4 all mockup">
+            <div class="single-portfolio col-sm-4 all app">
               <a href="./images/portfolio/work_5.jpg" data-fancybox="gal">
                 <img src="./images/portfolio/work_5.jpg" alt="Image" class="img-fluid" />
                 <div class="contents">
@@ -298,7 +298,7 @@
                 </div>
               </a>
             </div>
-            <div class="single-portfolio col-sm-4 all typography">
+            <div class="single-portfolio col-sm-4 all graphic">
               <a href="./images/portfolio/work_1.jpg" data-fancybox="gal">
                 <img src="./images/portfolio/work_1.jpg" alt="Image" class="img-fluid" />
                 <div class="contents">
@@ -307,7 +307,7 @@
                 </div>
               </a>
             </div>
-            <div class="single-portfolio col-sm-4 all mockup">
+            <div class="single-portfolio col-sm-4 all app">
               <a href="./images/portfolio/work_2.jpg" data-fancybox="gal">
                 <img src="./images/portfolio/work_2.jpg" alt="Image" class="img-fluid" />
                 <div class="contents">
@@ -316,7 +316,7 @@
                 </div>
               </a>
             </div>
-            <div class="single-portfolio col-sm-4 all packaging">
+            <div class="single-portfolio col-sm-4 all web">
               <a href="./images/portfolio/work_3.jpg" data-fancybox="gal">
                 <img src="./images/portfolio/work_3.jpg" alt="Image" class="img-fluid" />
                 <div class="contents">
@@ -325,7 +325,7 @@
                 </div>
               </a>
             </div>
-            <div class="single-portfolio col-sm-4 all typography">
+            <div class="single-portfolio col-sm-4 all graphic">
               <a href="./images/portfolio/work_4.jpg" data-fancybox="gal">
                 <img src="./images/portfolio/work_4.jpg" alt="Image" class="img-fluid" />
                 <div class="contents">
@@ -334,7 +334,7 @@
                 </div>
               </a>
             </div>
-            <div class="single-portfolio col-sm-4 all photography">
+            <div class="single-portfolio col-sm-4 all packaging">
               <a href="./images/portfolio/work_6.jpg" data-fancybox="gal">
                 <img src="./images/portfolio/work_6.jpg" alt="Image" class="img-fluid" />
                 <div class="contents">
@@ -343,7 +343,7 @@
                 </div>
               </a>
             </div>
-            <div class="single-portfolio col-sm-4 all photography">
+            <div class="single-portfolio col-sm-4 all packaging">
               <a href="./images/portfolio/work_7.jpg" data-fancybox="gal">
                 <img src="./images/portfolio/work_7.jpg" alt="Image" class="img-fluid" />
                 <div class="contents">
@@ -380,22 +380,9 @@
                     <span class="mr-3">
                       <span>APPX 時賦科技</span>
                     </span>
-
-                    <span class="icon">
-                      <svg
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        class="bi bi-geo-alt"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                    </span>
+                    <div class="icon">
+                      <img src="./images/icon/location.svg" />
+                    </div>
                     <span>台北</span>
                   </div>
                   <div></div>
@@ -407,24 +394,7 @@
                 </div>
 
                 <span class="icon">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 16 16"
-                    class="bi bi-calendar-event"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                    />
-                    <rect width="2" height="2" x="11" y="6" rx=".5" />
-                  </svg>
+                  <img src="./images/icon/date.svg" />
                 </span>
                 <span>2022/04-Now</span>
               </div>
@@ -438,22 +408,9 @@
                     <span class="mr-3">
                       <span>廣告設計有限公司</span>
                     </span>
-
-                    <span class="icon">
-                      <svg
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        class="bi bi-geo-alt"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                    </span>
+                    <div class="icon">
+                      <img src="./images/icon/location.svg" />
+                    </div>
                     <span>台中</span>
                   </div>
                   <div></div>
@@ -465,24 +422,7 @@
                 </div>
 
                 <span class="icon">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 16 16"
-                    class="bi bi-calendar-event"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                    />
-                    <rect width="2" height="2" x="11" y="6" rx=".5" />
-                  </svg>
+                  <img src="./images/icon/date.svg" />
                 </span>
                 <span>2017/03-2022/03</span>
               </div>
@@ -503,24 +443,7 @@
               </div>
               <div class="ml-auto resume-meta">
                 <span class="icon">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 16 16"
-                    class="bi bi-calendar-event"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                    />
-                    <rect width="2" height="2" x="11" y="6" rx=".5" />
-                  </svg>
+                  <img src="./images/icon/date.svg" />
                 </span>
                 <span>2015-2017</span>
               </div>
@@ -540,24 +463,7 @@
               </div>
               <div class="ml-auto resume-meta">
                 <span class="icon">
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 16 16"
-                    class="bi bi-calendar-event"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                    />
-                    <rect width="2" height="2" x="11" y="6" rx=".5" />
-                  </svg>
+                  <img src="./images/icon/date.svg" />
                 </span>
                 <span>2011-2015</span>
               </div>
@@ -587,7 +493,7 @@
                     <span class="mr-2">November 05, 2024</span>
                   </p>
                 </div>
-                <h3 class="heading"><a href="https://happy9990929.github.io/2024/11/05/css-webkit-scrollbar">::-webkit-scrollbar 自訂與眾不同的滾動條效果</a></h3>
+                <h3 class="heading"><a href="https://happy9990929.github.io/2024/11/05/css-webkit-scrollbar" target="_blank">::-webkit-scrollbar 自訂與眾不同的滾動條效果</a></h3>
                 <p>在現代網頁中，如果內容高於瀏覽器或是元素區塊的高度，會出現滾動條方便瀏覽，一般瀏覽器預設為灰色的樣式。</p>
               </div>
             </div>
@@ -601,21 +507,21 @@
                     <span class="mr-2">November 04, 2024</span>
                   </p>
                 </div>
-                <h3 class="heading"><a href="https://happy9990929.github.io/2024/11/04/css-first-letter">::first-letter & ::first-line & ::selection 文章段落偽元素</a></h3>
+                <h3 class="heading"><a href="https://happy9990929.github.io/2024/11/04/css-first-letter" target="_blank">::first-letter & ::first-line & ::selection 文章段落偽元素</a></h3>
                 <p>偽元素允許開發者選取並操控元素中特定的部分或內容，這樣可以在不改變 HTML 結構的情況下，實現更靈活的設計。</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry">
-              <a href="https://happy9990929.github.io/2024/11/01/css-not" class="block-20" style="background-image: url('./images/blog/image_3.jpg')"> </a>
+              <a href="https://happy9990929.github.io/2024/11/01/css-not" class="block-20" style="background-image: url('./images/blog/image_3.jpg')" target="_blank"> </a>
               <div class="text mt-3 float-right d-block">
                 <div class="d-flex align-items-center mb-3 meta">
                   <p class="mb-0">
                     <span class="mr-2">November 04, 2024</span>
                   </p>
                 </div>
-                <h3 class="heading"><a href="https://happy9990929.github.io/2024/11/01/css-not">:not 不選擇的藝術，如何用 CSS 控制排除</a></h3>
+                <h3 class="heading"><a href="https://happy9990929.github.io/2024/11/01/css-not" target="_blank">:not 不選擇的藝術，如何用 CSS 控制排除</a></h3>
                 <p>:not 選擇器可以選取不符合指定選擇器的元素，主要功能是排除符合特定選擇器的元素，這讓我們能夠將樣式應用於那些不符合條件的元素，也稱為是「反選偽類」或「否定偽類」(negation pseudo-class)。</p>
               </div>
             </div>
@@ -628,19 +534,25 @@
     <footer class="ftco-footer ftco-section text-center">
       <div class="container">
         <ul class="ftco-footer-social list-unstyled">
-          <li class="ftco-animate">
-            <a href="#">
-							<span class="icon-twitter"></span>
+          <li>
+            <a href="https://medium.com/appxtech/tagged/appx" target="_blank">
+              <span>
+                <img src="./images/icon/medium.svg" />
+              </span>
 						</a>
           </li>
-          <li class="ftco-animate">
+          <li>
             <a href="https://www.facebook.com/" target="_blank">
-              <span class="icon-facebook"></span>
+              <span>
+                <img src="./images/icon/facebook.svg" />
+              </span>
             </a>
           </li>
-          <li class="ftco-animate">
+          <li>
             <a href="https://www.instagram.com/" target="_blank">
-              <span class="icon-instagram"></span>
+              <span>
+                <img src="./images/icon/instagram.svg" />
+              </span>
             </a>
           </li>
         </ul>
@@ -648,23 +560,40 @@
       </div>
     </footer>
 
+    <!-- loading -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery-migrate-3.0.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
+    <!-- 輪播圖 -->
+    <script src="./js/owl.carousel.min.js"></script>
+
     <!-- 動畫 -->
     <script src="./js/jquery.easing.1.3.js"></script>
     <script src="./js/jquery.waypoints.min.js"></script>
-
-    <!-- 輪播圖 -->
-    <script src="./js/owl.carousel.min.js"></script>
 
     <!-- 排序分類效果 -->
     <script src="./js/isotope.pkgd.min.js"></script>
     <script src="./js/imagesloaded.pkgd.js"></script>
 
     <!-- 燈箱 -->
-    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
 
     <!-- 自訂義 -->
     <script src="./js/main.js"></script>

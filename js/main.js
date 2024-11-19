@@ -1,16 +1,6 @@
 (function ($) {
   'use strict';
 
-  // loading
-  var loader = function () {
-    setTimeout(function () {
-      if ($('#ftco-loader').length > 0) {
-        $('#ftco-loader').removeClass('show');
-      }
-    }, 1);
-  };
-  loader();
-
   // 選單動畫
   var onePageClick = function () {
     $(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
@@ -159,4 +149,17 @@
     }
   };
   portfolioMasonry();
+
+  // 燈箱
+  Fancybox.bind("[data-fancybox]");
+
+  // loading
+  var loader = function () {
+    setTimeout(function () {
+      if ($('#ftco-loader').length > 0) {
+        $('#ftco-loader').removeClass('show');
+      }
+    }, 10);
+  };
+  loader();
 })(jQuery);
