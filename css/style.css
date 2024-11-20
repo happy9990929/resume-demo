@@ -570,7 +570,7 @@ h4,
 }
 .owl-carousel.home-slider .owl-nav .owl-prev:hover,
 .owl-carousel.home-slider .owl-nav .owl-prev:focus {
-  background: #000000 !important;
+  background: #eaeaea !important;
   outline: none !important;
 }
 .owl-carousel.home-slider .owl-nav .owl-prev:hover span:before,
@@ -590,7 +590,7 @@ h4,
 }
 .owl-carousel.home-slider .owl-nav .owl-next:hover,
 .owl-carousel.home-slider .owl-nav .owl-next:focus {
-  background: #000000 !important;
+  background: #eaeaea !important;
   outline: none !important;
 }
 .owl-carousel.home-slider .owl-nav .owl-next:hover span:before,
