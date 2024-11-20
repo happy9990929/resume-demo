@@ -50,7 +50,7 @@
       margin: 0,
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
-      nav: true,
+      nav: false,
       autoplayHoverPause: false,
       items: 1,
       navText: ["<span><img src='../images/icon/arrow_left.svg' /></span>", "<span><img src='../images/icon/arrow_right.svg' /></span>"],
@@ -68,6 +68,37 @@
     });
   };
   carousel();
+
+  // 作品排序、分類
+  var portfolioMasonry = function () {
+    $('.filters ul li').click(function () {
+      $('.filters ul li').removeClass('active');
+      $(this).addClass('active');
+
+      var data = $(this).attr('data-filter');
+      $grid.isotope({
+        filter: data,
+      });
+    });
+
+    if (document.getElementById('portfolio-section')) {
+      var $grid = $('.grid').isotope({
+        itemSelector: '.all',
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.all',
+        },
+      });
+
+      $grid.imagesLoaded().progress(function () {
+        $grid.isotope('layout');
+      });
+    }
+  };
+  portfolioMasonry();
+
+  // 燈箱
+  Fancybox.bind("[data-fancybox]");
 
   // 動畫
   var contentWayPoint = function () {
@@ -106,37 +137,6 @@
     );
   };
   contentWayPoint();
-
-  // 作品排序、分類
-  var portfolioMasonry = function () {
-    $('.filters ul li').click(function () {
-      $('.filters ul li').removeClass('active');
-      $(this).addClass('active');
-
-      var data = $(this).attr('data-filter');
-      $grid.isotope({
-        filter: data,
-      });
-    });
-
-    if (document.getElementById('portfolio-section')) {
-      var $grid = $('.grid').isotope({
-        itemSelector: '.all',
-        percentPosition: true,
-        masonry: {
-          columnWidth: '.all',
-        },
-      });
-
-      $grid.imagesLoaded().progress(function () {
-        $grid.isotope('layout');
-      });
-    }
-  };
-  portfolioMasonry();
-
-  // 燈箱
-  Fancybox.bind("[data-fancybox]");
 
   // loading
   var loader = function () {
