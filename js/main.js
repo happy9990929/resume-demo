@@ -1,6 +1,31 @@
 (function ($) {
   'use strict';
 
+  // 選單捲動
+  var scrollWindow = function () {
+    var navbar = document.querySelector('.ftco_navbar');
+
+    var onScroll = function () {
+      var st = window.scrollY;
+
+      if (st > 150) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      if (st > 350) {
+        navbar.classList.add('awake');
+      } else {
+        navbar.classList.remove('awake');
+      }
+    };
+
+    window.addEventListener('scroll', onScroll);
+  };
+
+  scrollWindow();
+
   // 選單動畫
   var onePageClick = function () {
     $(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
@@ -16,46 +41,6 @@
   };
 
   onePageClick();
-
-  // 選單捲動
-  var scrollWindow = function () {
-    $(window).scroll(function () {
-      var $w = $(this),
-        st = $w.scrollTop(),
-        navbar = $('.ftco_navbar'),
-        sd = $('.js-scroll-wrap');
-
-      if (st > 150) {
-        if (!navbar.hasClass('scrolled')) {
-          navbar.addClass('scrolled');
-        }
-      }
-      if (st < 150) {
-        if (navbar.hasClass('scrolled')) {
-          navbar.removeClass('scrolled sleep');
-        }
-      }
-      if (st > 350) {
-        if (!navbar.hasClass('awake')) {
-          navbar.addClass('awake');
-        }
-
-        if (sd.length > 0) {
-          sd.addClass('sleep');
-        }
-      }
-      if (st < 350) {
-        if (navbar.hasClass('awake')) {
-          navbar.removeClass('awake');
-          navbar.addClass('sleep');
-        }
-        if (sd.length > 0) {
-          sd.removeClass('sleep');
-        }
-      }
-    });
-  };
-  scrollWindow();
 
   // 輪播圖
   var carousel = function () {
