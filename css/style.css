@@ -902,6 +902,9 @@ h4,
 .single-portfolio > a:hover .contents h3 {
   color: #ffffff;
 }
+.single-portfolio > a:hover .portfolio-text {
+  color: #77b7ff;
+}
 .single-portfolio .contents {
   position: absolute;
   top: 50%;
